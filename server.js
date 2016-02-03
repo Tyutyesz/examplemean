@@ -10,7 +10,7 @@ var express = require('express'),
 var port = 8888;
 
 
-var db = 'mongodb://localhost:27017/myDb';
+var db = 'mongodb://localhost:27017/myDb/persons';
 
 var Person = require('./app/models/persons');
 
@@ -50,7 +50,7 @@ var router = express.Router();
 
 app.get('/api', router);
 
-app.get('*', function(req, res) {
+app.get('/', function(req, res) {
     res.sendfile('./public/index.html'); // load our public/index.html file
 });
 

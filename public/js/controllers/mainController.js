@@ -9,7 +9,7 @@ app.controller('mainController', function($scope,$http ){
 
    var getItems = function(){
       console.log('kérem');
-      $http({method: 'GET', url: 'http://localhost:8888/api/persons'})
+      $http({method: 'GET', url: 'http://localhost:8888/api/persons', headers: { 'X-Parse-Application-Id':'XXXXXXXXXXXXX', 'X-Parse-REST-API-Key':'YYYYYYYYYYYYY'}})
           .success(function(data, status){
              $scope.myPerson = data;
              console.log($scope.myPerson);
