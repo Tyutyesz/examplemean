@@ -1,0 +1,27 @@
+{
+  "name": "exampleServer",
+  "authors": [
+    "Tyutyesz <cs.matyi@hotmail.com>"
+  ],
+  "description": "",
+  "main": "server.js",
+  "moduleType": [
+    "es6"
+  ],
+  "dependencies": {
+    "bootstrap": "latest",
+    "font-awesome": "latest",
+    "animate.css": "latest",
+    "angular": "latest",
+    "angular-route": "latest"
+  },
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
